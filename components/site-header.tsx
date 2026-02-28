@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import Link from "next/link"
 import { Phone, Menu, X } from "lucide-react"
 import { useState } from "react"
@@ -22,8 +23,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-navy-dark text-primary-foreground shadow-lg pt-[env(safe-area-inset-top)]">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 lg:px-8">
         <Link href="/" className="flex items-center gap-2" aria-label="Ottawa Crack Repair Network Home">
-          <div className="flex size-9 items-center justify-center rounded-md bg-accent">
-            <Phone className="size-5 text-accent-foreground" />
+          <div className="relative flex size-9 shrink-0 items-center justify-center overflow-hidden rounded-md bg-white">
+            <Image src="/icon.png" alt="" width={36} height={36} className="object-contain p-0.5" />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-bold tracking-tight lg:text-base">Ottawa Crack Repair</span>

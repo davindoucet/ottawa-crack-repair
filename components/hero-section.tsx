@@ -1,23 +1,11 @@
-import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { images } from "@/lib/images"
 
 export function HeroSection() {
   return (
     <section className="relative bg-navy-dark text-primary-foreground overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--navy-light)_0%,_transparent_60%)] opacity-40" />
-      <div className="absolute inset-0 opacity-30">
-        <Image
-          src={images.hero}
-          alt="Ottawa area home — foundation crack repair and driveway sealing"
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-        />
-      </div>
       <div className="relative mx-auto max-w-7xl px-4 py-16 md:py-24 lg:px-8 lg:py-32">
         <div className="max-w-2xl">
           <h1 className="text-balance text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
