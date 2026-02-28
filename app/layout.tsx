@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics } from "@/components/google-analytics"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { SITE_URL, DEFAULT_DESCRIPTION, PRIMARY_KEYWORDS, getOrganizationSchema } from "@/lib/seo"
@@ -74,6 +75,7 @@ export default function RootLayout({
         <SiteHeader />
         <main id="main-content">{children}</main>
         <SiteFooter />
+        <GoogleAnalytics />
         <Analytics />
       </body>
     </html>
