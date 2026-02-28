@@ -42,6 +42,7 @@ export const metadata: Metadata = {
   },
   alternates: { canonical: SITE_URL },
   category: "Home and Garden",
+  icons: { icon: "/icon.png", apple: "/icon.png" },
 }
 
 export const viewport: Viewport = {
